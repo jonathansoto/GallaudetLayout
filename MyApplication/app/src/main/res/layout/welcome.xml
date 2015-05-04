@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:longClickable="false"
+    android:src="@drawable/gallaudet_univ_logo"/>
+
+<TextView
+    android:id="@+id/SACTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="2"
+    android:layout_row="6"
+    android:labelFor="@+id/SACTextView"
+    android:text="Welcome to Gallaudet Campus"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="25dp"
+    android:layout_below="@+id/imageView"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="43dp" />
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView3"
+    android:src="@drawable/gucampus"
+    android:layout_alignParentBottom="true"
+    android:layout_toStartOf="@+id/button"
+    android:layout_alignParentEnd="false"
+    android:layout_marginTop="200dp" />
+
+<TextView
+    android:id="@+id/SacTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="2"
+    android:layout_row="6"
+    android:labelFor="@+id/SacTextView"
+    android:text="Click on one of three text"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="25dp"
+    android:layout_below="@+id/SACTextView"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SAC"
+    android:id="@+id/button"
+    android:layout_marginBottom="76dp"
+    android:onClick="sendMessage"
+    android:layout_alignParentBottom="true"
+    android:layout_alignStart="@+id/button2" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SLCC"
+    android:id="@+id/button2"
+    android:layout_above="@+id/button"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="39dp"
+    android:onClick="sendMessage"/>
+
+
+</RelativeLayout>
